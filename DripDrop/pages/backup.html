@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The <title> tag is required in all HTML documents and it defines the title of the document. -->
+    <title>Sample Page</title>
+    <meta charset="UTF-8">
+    <!-- The <link> tag defines a link between a document and an external resource. -->
+    <!-- The <link> tag is used to link to external style sheets. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        body {
+            background-color: #444444;
+        }
+        #firstDiv {
+            background-color: #999999;
+            color: #000000;
+            font-family: "Times New Roman", serif;
+            font-size: 20px;
+        }
+        #secondDiv {
+            background-color: #CDCDCD;
+            color: rgba(0,0,0,.7);
+        }
+        .divs {
+            margin: .5em;
+            border: .75em solid #444444;
+            padding: .7em;
+            background-color: violet;
+        }
+
+        a {
+            background-color: #DDDDDD;
+        }
+        a:hover {
+            background-color: #555555;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+
+<!-- This is a comment, anything in a comment cannot be compiled/executed -->
+
+<body>
+    <div class="vertical-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+    <!-- The <h1> to <h6> tags are used to define HTML headings. -->
+    <!-- <h1> defines the most important heading. <h6> defines the least important heading -->
+    <h1>Test header</h1>
+    <h2>2nd header</h2>
+    <h3>3rd header</h3>
+    <p>This is a paragraph</p>
+
+    <!-- This inserts a single line break, esentially an endl or a newline -->
+    <br></br>
+
+    <!-- The <table> tag defines a HTML table. -->
+    <table>
+        <!-- The <tr> tag defines a row in an HTML table. -->
+        <tr>
+            <!-- The <th> tag defines a column in an HTML table. -->
+            <th>Sample Table</th>
+        </tr> <!-- </ (tag name here)> signifies the end of a tag. i.e. this is the end of a row -->
+        <tr>
+            <td>example 1</td>
+            <td>example 2</td>
+        </tr>
+    </table> <!-- end of the table -->
+    <br></br>
+
+    <!-- <img> defines a image -->
+    <!-- src is the file location and alt is text that happens -->
+    <img src="canyon.jpg" alt="error text"></img>
+    <br><br>
+    <!-- creates a button. type-->
+    <!-- onclick finds a JavaScript function, and executes when the button is clicked -->
+    <button type="button" onclick="changeText()">Click Me!</button>
+    <br>
+    <!-- This is text that changes when the button is clicked -->
+    <p id="changedText">This has not been changed</p>
+    <p id="numbers">Number: </p>
+    <p id="date"></p>
+    <br><br>
+    <!-- This is a link -->
+    <!-- href is the file location or the web address -->
+    <a href="pages/meetDev.html">This is a link</a>
+    <br><br>
+    <!-- This is a div (grouping tool) -->
+    <!-- id is a unique idenitifer for one element and class is a unique idenitifer for multiple elements -->
+    <div id="firstDiv" class="divs">
+        <!-- This is inline style -->
+        <p style="color:yellow;text-align: right;">This is text</p>
+    </div>
+    <div id="secondDiv" class="divs">
+        <p>This is not text</p>
+    </div>
+
+    <script>
+        //This is a JavaScript comment
+
+        //This is a function
+        function changeText() {
+            //These are varibles
+            var x = 5;
+            var y = 6;
+            var z = x + y;
+
+            //doument means in this page
+            //getElementById means that the action is applied to that element
+            //innerHTML is a change in the text
+            document.getElementById("changedText").innerHTML = "Changed!";
+            //This is how you concatate
+            document.getElementById("numbers").innerHTML = "Number: " + z;
+            //This is a global function. You can use these functions anywhere in your JavaScript
+            document.getElementById("date").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>
