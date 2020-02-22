@@ -31,3 +31,7 @@ h1 {
     background-color: #4CAF50;
     color: white;
   }
+
+.member-space {
+  min-height: 1px;
+}
