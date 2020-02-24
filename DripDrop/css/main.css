@@ -1,0 +1,51 @@
+/* This is a CSS comment */
+/* This applies the styling to the <body> HTML tag */
+body {
+    /* Changes the color of the background */
+    background-color: #FDFDFD;
+}
+
+h1 {
+    /* moves the text to a specific alignment (location) */
+    text-align: center;
+}
+
+.vertical-menu {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.member-space {
+  min-height: 1px;
+}
+
+.team-pic {
+  height: 75px;
+  width: 75px;
+}
+
+.quiz-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.quizzes-content {
+  width: 100px;
+}
