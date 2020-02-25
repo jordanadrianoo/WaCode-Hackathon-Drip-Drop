@@ -1,4 +1,3 @@
-// hello world
 #include <LiquidCrystal.h>
 #include <dht.h>
 dht DHT;
